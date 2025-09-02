@@ -1,0 +1,17 @@
+<odoo>
+    <record id="res_config_settings_view_form_telegram" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.telegram</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('settings')]" position="inside">
+                <div class="app_settings_block" data-string="Telegram" string="Telegram">
+                    <h2>Telegram Settings</h2>
+                    <group>
+                        <field name="telegram_bot_token"/>
+                    </group>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
